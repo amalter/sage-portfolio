@@ -1,0 +1,22 @@
+.home-header {
+  height: 100vh;
+
+  &_container {
+    &-brand {
+      margin: 2.4em 0 2em;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+    }
+  } //container
+}//banner
+
+.banner .nav li {
+  @extend .nav-item;
+}
+
+.banner .nav a {
+  @extend .nav-link;
+}
