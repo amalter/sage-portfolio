@@ -1,10 +1,31 @@
 /** Import Bootstrap functions */
 @import "~bootstrap/scss/functions";
 
+$aa-white : #fff;
+$aa-black : #262422;
+$aa-light-gray : #9e9898;
+
 $theme-colors: (
-  primary: #525ddc
+  white: #fff,
+  black: #262422,
+  light-gray: #9e9898
 );
 
 /** Bootstrap navbar fix (https://git.io/fADqW) */
 $navbar-dark-toggler-icon-bg: none;
 $navbar-light-toggler-icon-bg: none;
+
+/** Accessibility Styles **/
+@mixin focus-style {
+  &:focus {
+    text-decoration: none;
+    border: dashed $aa-white 2px;
+  }
+}
+
+@mixin hover-link {
+  &:hover {
+    text-decoration: underline !important;
+    text-decoration-style: dashed !important;
+  }
+}
