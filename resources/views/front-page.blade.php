@@ -1,9 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-  @while(have_posts()) @php the_post() @endphp
-    @include('partials.content-page')
-  @endwhile
+
 <section class="front-page_section front-page_section-portfolio" id="portfolio">
     @foreach($portfolio_loop as $portfolio_topic)
     <div class="front-page_section-portfolio_topic" style="background: linear-gradient( rgba(38, 36, 35, 0.3), rgba(38, 36, 35, 0.3) ), url({!! $portfolio_topic['thumbnail_url'] !!});">
@@ -11,4 +9,10 @@
     </div>  
     @endforeach
 </section><!--#portfolio-->
+<section class="front-page_section" id="about-me">
+about me
+</section><!--#about-me-->
+<section class="front-page_section" id="contact">
+contact
+</section><!--#contact-->
 @endsection
