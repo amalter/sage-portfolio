@@ -1,4 +1,8 @@
 .home {
+  &-header {
+    background-repeat: no-repeat !important;
+  }
+
   .container {
     width: 100%;
     max-width: 100%;
@@ -13,21 +17,39 @@
     width: 100vw;
     min-height: 100vh;
 
+    &-title {
+      text-align: center;
+      margin: 20px 0;
+      color: blue;
+    }
+
     &-portfolio {
-      display: flex;
+      &_topics {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        column-gap: 10px;
+        row-gap: 10px;
+        justify-items: center;
+        max-width: 1400px;
+        margin: auto;
 
-      &_topic {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-repeat: no-repeat !important;
-        background-size: cover !important;
+        &--topic {
+          width: 100%;
+          max-width: 550px;
+          height: 300px;
+          padding: 10px 20px;
+          background-repeat: no-repeat !important;
+          background-size: cover !important;
+          background-position: center !important;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
 
-        &-title {
-          color: $aa-white;
-        }//title
-      }//topic
+          &-title {
+            color: $aa-white;
+          }//title
+        }//topic
+      }//topics
     }//portfolio
   }//section
 }//.front-page
