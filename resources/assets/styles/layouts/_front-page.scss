@@ -1,4 +1,8 @@
 .home {
+  &.no-scroll {
+    overflow: hidden;
+  }
+
   &-header {
     background-repeat: no-repeat !important;
   }
@@ -52,21 +56,28 @@
             top: 0;
             transition: top 0.5s ease-in-out;
           }//title
-          &-button {
+          &-btn-open {
             opacity: 0;
             position: relative;
             top: 0;
             height: 0;
             width: 25%;
             padding: 0;
-            transition: top 0.5s ease-in-out, opacity 1s ease-in-out, width 0.5s ease-in-out, padding 0.5s ease-in-out, height 0.5s ease-in-out;
+            transition: top 0.5s ease-in-out, opacity 1s ease-in-out;
+            border-color: $aa-purple;
+            background-color: $aa-purple;
+            color: $aa-white;
+
+            &:hover {
+              border-color: $aa-dark-purple;
+            }
           }
 
           &:hover &-title {
             top: -100px;
           }
 
-          &:hover &-button {
+          &:hover &-btn-open {
             top: -100px;
             opacity: 1;
             width: 35%;
@@ -75,6 +86,50 @@
           }
         }//topic
       }//topics
+      .portfolio_topic-modal {
+        visibility: hidden;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+        background-color: #00000080;
+        overflow: scroll;
+
+        &.show-modal {
+          visibility: visible;
+          opacity: 1;
+          z-index: 1;
+        }//.show-modal
+
+        &__content {
+          margin: 2em auto;
+          height: 100%;
+          max-width: 1200px;
+          background-color: $aa-white;
+          position: static;
+
+          &--btn-close {
+            background-color: $aa-purple;
+            border-color: $aa-purple;
+            color: $aa-white;
+            font-size: 24px;
+            padding: 0 10px;
+            position: sticky;
+            float: right;
+            top: 0;
+
+            &:hover {
+              border-color: $aa-dark-purple;
+            }
+          }//btn-close
+          &--details {
+            padding: 2em;
+          }
+        }//content
+      }//portfolio_topic-modal
     }//portfolio
   }//section
 }//.front-page
