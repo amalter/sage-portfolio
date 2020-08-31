@@ -21,16 +21,18 @@
 
   &_section {
     width: 100vw;
-    min-height: 90vh;
-    padding: 1em 1em 3em;
+    padding: 3em 1em;
 
     &-title {
-      text-align: center;
       margin: 20px 0;
     }
 
     &-portfolio {
-      @include pie-bg;
+      @include bg-gray;
+
+      &-title {
+        text-align: center;
+      }
 
       &_topics {
         max-width: 1400px;
@@ -134,5 +136,8 @@
         }//content
       }//portfolio_topic-modal
     }//portfolio
+    &-about-me {
+      @include bg-purple;
+    }
   }//section
 }//.front-page

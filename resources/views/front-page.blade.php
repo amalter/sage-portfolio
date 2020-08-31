@@ -44,10 +44,7 @@
 })();
 </script>
 </section><!--#portfolio-->
-<section class="front-page_section front-page_section-about-me" id="about-me">
-  <h2 class="front-page_section-title front-page_section-about-me-title">About Me</h2>
-</section><!--#about-me-->
-<section class="front-page_section front-page_section-contact" id="contact">
-  <h2 class="front-page_section-title front-page_section-contact-title">Contact</h2>
-</section><!--#contact-->
+<section class="front-page-content">
+  @php the_content() @endphp
+</section>
 @endsection
