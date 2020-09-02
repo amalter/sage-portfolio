@@ -30,6 +30,8 @@
     &-portfolio {
       @include bg-gray;
 
+      padding-top: 1em;
+
       &-title {
         text-align: center;
       }
@@ -43,7 +45,7 @@
         justify-items: center;
 
         @include mq(phone, min) {
-          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
         }
 
         &--topic {

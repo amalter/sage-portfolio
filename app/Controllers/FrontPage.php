@@ -11,8 +11,8 @@ class FrontPage extends Controller
     {
         $portfolio_topics = get_posts([
         'post_type' => 'portfolio_topic',
-        'posts_per_page'=>'3',
-        'order' => 'ASC',
+        'posts_per_page'=>'9',
+        'order' => 'DESC',
         ]);
         
         return array_map(function ($post) {
