@@ -1,3 +1,26 @@
+.banner {
+  @include bg-dark-gray;
+
+  padding: 2em;
+  color: $aa-white;
+
+  .brand {
+    margin: 2em 0;
+    color: $aa-white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+
+    &:hover {
+      text-decoration: none;
+      color: $aa-light-gray;
+    }
+
+    @include focus-style;
+  }//brand
+}
+
 .banner .nav li {
   @extend .nav-item;
 }
