@@ -1,0 +1,36 @@
+.footer {
+  @include bg-dark-gray;
+
+  padding: 2em;
+  color: $aa-white;
+
+  &_container {
+    text-align: center;
+
+    @include mq(phone-wide, min) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }//mq phone-wide min
+
+    .copyright {
+      a {
+        color: $aa-white;
+        text-decoration: underline;
+      }
+    }//copyright
+    .social-icons {
+      margin-top: 1em;
+
+      @include mq(phone-wide, min) {
+        margin-top: 0;
+
+        a {
+          img {
+            width: 30px;
+          }
+        }
+      }//mq phone-wide min
+    }
+  }
+}
