@@ -49,6 +49,13 @@
   @extend .figure-caption;
 }
 
+.wp-block-image {
+  figcaption {
+    font-size: small;
+    color: $aa-gray;
+  }
+}
+
 /** Text meant only for screen readers */
 .screen-reader-text {
   @extend .sr-only;
