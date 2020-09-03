@@ -30,8 +30,6 @@
     &-portfolio {
       @include bg-gray;
 
-      padding-top: 1em;
-
       &-title {
         text-align: center;
       }
@@ -140,6 +138,10 @@
     }//portfolio
     &-about-me {
       @include bg-purple;
+    }
+
+    &-contact {
+      @include bg-gray;
     }
   }//section
 }//.front-page

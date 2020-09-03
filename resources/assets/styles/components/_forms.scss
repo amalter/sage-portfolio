@@ -17,3 +17,54 @@
   @extend .btn;
   @extend .btn-secondary;
 }
+
+/* WP Forms */
+
+.wpforms-container {
+  max-width: 600px;
+
+  &.bg-white {
+    padding: 2em;
+  }
+
+  .wpforms-submit-container {
+    button[type=submit] {
+      background-color: $aa-purple !important;
+      color: $aa-white !important;
+    }
+
+    @include mq(phablet, min) {
+      display: inline-block !important;
+    }
+  }//.wpforms-form
+}//.wpforms-container
+
+div.wpforms-container-full .wpforms-form input.wpforms-field-medium,
+div.wpforms-container-full .wpforms-form select.wpforms-field-medium,
+div.wpforms-container-full .wpforms-form .wpforms-field-row.wpforms-field-medium {
+  max-width: 100% !important;
+}
+
+.wpforms-confirmation-container-full {
+  max-width: 800px;
+  border: 1px solid $aa-purple !important;
+  background: $aa-light-purple !important;
+}//wpforms-confirmation-container-full
+
+/* reCAPTCHA v2 badge */
+
+.wpforms-recaptcha-container {
+  .g-recaptcha {
+    .grecaptcha-badge {
+      width: 100% !important;
+      max-width: 256px;
+      position: static !important;
+    }//grecaptcha-badge
+  }//  .g-recaptcha
+
+  @include mq(phablet, min) {
+    float: right !important;
+    display: inline-block !important;
+    position: relative !important;
+  }
+}//wpforms-recaptcha-container
