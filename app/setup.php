@@ -20,6 +20,14 @@ add_action('wp_enqueue_scripts', function () {
 }, 100);
 
 /**
+ * Block Editor styles
+ * @see resources/assets/styles/editor-styles.scss
+ */
+add_action('enqueue_block_editor_assets', function () {
+    wp_enqueue_style('sage/editor-styles.css', asset_path('styles/editor-styles.css'), false, null);
+});
+
+/**
  * Theme setup
  */
 add_action('after_setup_theme', function () {

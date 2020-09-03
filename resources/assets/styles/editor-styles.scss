@@ -1,0 +1,8 @@
+@import "common/variables";
+
+/* WordPress Editor Styles */
+//Group block
+.wp-block-group {
+  outline: solid $aa-black 2px;
+  outline-offset: 15px;
+}
