@@ -4,3 +4,9 @@
     {{ get_the_author() }}
   </a>
 </p>
+<div class="categories">
+  @php
+     echo get_the_category_list(', ');
+  @endphp
+
+</div>

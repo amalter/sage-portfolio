@@ -1,0 +1,17 @@
+/* Posts Archive Page Styles */
+
+.index-data {
+  @include bg-gray;
+
+  a {
+    color: $aa-purple;
+  }
+
+  .container {
+    article {
+      padding: 2em;
+      background: white;
+      margin: 2em 0;
+    }
+  }
+}//index-data
