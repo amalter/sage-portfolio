@@ -4,7 +4,7 @@
   }
 
   &-header {
-    background-repeat: no-repeat !important;
+    @include bg-dark-gray;
   }
 
   .container {
@@ -138,6 +138,11 @@
     }//portfolio
     &-about-me {
       @include bg-purple;
+
+      .wp-block-group__inner-container {
+        max-width: 900px;
+        margin: auto;
+      }
     }
 
     &-contact {
