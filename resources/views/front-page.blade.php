@@ -4,6 +4,7 @@
 
 <section class="front-page_section front-page_section-portfolio" id="portfolio">
   <h2 class="front-page_section-title front-page_section-portfolio-title">Portfolio</h2>
+  <hr class="fancy-pants">
   <div class="front-page_section-portfolio_topics">
     @foreach($portfolio_loop as $portfolio_topic)
     <div class="front-page_section-portfolio_topics--topic" style="background: linear-gradient( rgba(38, 36, 35, 0.3), rgba(38, 36, 35, 0.3) ), url({!! $portfolio_topic['thumbnail_url'] !!});">

@@ -2,3 +2,7 @@
   margin-right: 0;
   margin-left: 0;
 }
+
+hr.fancy-pants {
+  @include fancy-pants-hr;
+}

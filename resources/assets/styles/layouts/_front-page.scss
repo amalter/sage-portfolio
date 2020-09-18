@@ -28,7 +28,7 @@
     }
 
     &-portfolio {
-      @include bg-gray;
+      background: $aa-white;
 
       &-title {
         text-align: center;
@@ -146,7 +146,7 @@
     }
 
     &-contact {
-      @include bg-gray;
+      background: $aa-white;
     }
   }//section
 }//.front-page
