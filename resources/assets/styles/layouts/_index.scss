@@ -10,8 +10,54 @@
   .container {
     article {
       padding: 2em;
-      background: white;
-      margin: 2em 0;
-    }
-  }
+      background: $aa-white;
+      margin: 2em auto;
+      max-width: 980px;
+
+      header {
+        &.single-post-header {
+          text-align: center;
+        }
+
+        .categories,
+        .post-data {
+          margin: 1em 0;
+        }
+
+        .categories {
+          font-size: 0.9em;
+          text-transform: uppercase;
+
+          a {
+            color: lighten($aa-gray, 15%);
+
+            &:hover {
+              color: $aa-purple;
+            }
+          }
+        }//categories
+      }//header
+      footer {
+        margin: 2em 0;
+        padding: 1em 0;
+        border-top: lighten($aa-light-gray, 25%) solid 2px;
+        border-bottom: lighten($aa-light-gray, 25%) solid 2px;
+
+        .tags {
+          font-style: italic;
+          padding-bottom: 1em;
+
+          span {
+            font-weight: bold;
+            font-style: normal;
+          }
+        }//tags
+        .post-nav {
+          display: flex;
+          justify-content: space-between;
+          font-size: 1.2em;
+        }
+      }//footer
+    }//article
+  }//container
 }//index-data

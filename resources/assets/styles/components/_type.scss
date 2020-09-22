@@ -1,5 +1,5 @@
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: $body-text;
 }
 
 h1,
@@ -9,5 +9,5 @@ h4,
 h5,
 h6,
 nav {
-  font-family: "Neuton", serif;
+  font-family: $title-text;
 }
