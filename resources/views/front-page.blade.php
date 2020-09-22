@@ -8,7 +8,7 @@
   <div class="front-page_section-portfolio_topics">
     @foreach($portfolio_loop as $portfolio_topic)
     <div class="front-page_section-portfolio_topics--topic" style="background: linear-gradient( rgba(38, 36, 35, 0.3), rgba(38, 36, 35, 0.3) ), url({!! $portfolio_topic['thumbnail_url'] !!});">
-      <h2 class="front-page_section-portfolio_topics--topic-title">{!! $portfolio_topic['title'] !!}</h2>
+      <h3 class="front-page_section-portfolio_topics--topic-title">{!! $portfolio_topic['title'] !!}</h3>
       <button class="front-page_section-portfolio_topics--topic-btn-open">View work</button>
      
     {{-- <div>{!! $portfolio_topic['content'] !!}</div> --}}

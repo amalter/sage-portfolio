@@ -7,10 +7,10 @@
   .brand {
     margin: 2em 0;
     color: $aa-white;
-    text-transform: uppercase;
     font-weight: 700;
-    font-size: 0.9rem;
+    font-size: 1.2em;
     letter-spacing: 1px;
+    font-family: $logo-type;
 
     &:hover {
       text-decoration: none;

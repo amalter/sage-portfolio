@@ -15,8 +15,9 @@ $theme-colors: (
   light-gray: $aa-light-gray
 );
 
-$body-text: "Open Sans", sans-serif;
-$title-text: "Neuton", serif;
+$body-text:  "Public Sans", sans-serif;
+$title-text: "Trirong", serif;
+$logo-type: "Nova Slim", sans-serif;
 
 /** Bootstrap navbar fix (https://git.io/fADqW) */
 $navbar-dark-toggler-icon-bg: none;
@@ -72,7 +73,7 @@ $navbar-light-toggler-icon-bg: none;
     color: $aa-light-gray;
     position: absolute;
     transform: rotate(90deg);
-    left: 6px;
+    left: 0;
     right: 0;
   }
 }

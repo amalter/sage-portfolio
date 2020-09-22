@@ -5,9 +5,10 @@
 
   &_container {
     &-brand {
+      font-family: $logo-type;
       position: relative;
       margin: 2.4em 0 2em;
-      color: $aa-light-gray !important;
+      color: lighten($aa-light-gray, 20%) !important;
 
       &::after {
         content: "";
