@@ -4,11 +4,16 @@
   margin-bottom: 0;
 
   &_container {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    align-content: center;
+    display: grid;
+
     &-brand {
       font-family: $logo-type;
       position: relative;
       margin: 2.4em 0 2em;
-      color: lighten($aa-light-gray, 20%) !important;
+      color: $aa-light-gray !important;
 
       &::after {
         content: "";
