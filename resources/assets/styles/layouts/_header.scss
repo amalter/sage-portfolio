@@ -1,30 +1,51 @@
-.banner {
-  @include bg-dark-gray;
+.main-header {
+  text-align: center;
+  margin-bottom: 1em;
 
-  padding: 2em;
-  color: $aa-white;
+  &_container {
+    @include mq(phone-wide, min) {
+      text-align: left;
+      margin-bottom: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }//mq phone-wide
 
-  .brand {
-    margin: 2em 0;
-    color: $aa-white;
-    font-weight: 700;
-    font-size: 1.2em;
-    letter-spacing: 1px;
-    font-family: $logo-type;
+    &--logo {
+      margin-bottom: 1em;
 
-    &:hover {
-      text-decoration: none;
-      color: $aa-light-gray;
-    }
+      @include mq(phone-wide, min) {
+        margin-bottom: 0;
+      }
+    }//logo
 
-    @include focus-style;
-  }//brand
-}
+    .navbar {
+      justify-content: center;
+      text-align: center;
+      background-color: $aa-white;
+      border-radius: 5px;
 
-.banner .nav li {
-  @extend .nav-item;
-}
+      @include mq(phone-wide, min) {
+        text-align: left;
+      }
 
-.banner .nav a {
-  @extend .nav-link;
-}
+      &-toggler {
+        padding: 0;
+
+        &-icon {
+          svg {
+            font-size: 28px;
+          }
+        }//icon
+      }//navbar-toggler
+
+      li {
+        @extend .nav-item;
+      }
+
+      a {
+        @extend .nav-link;
+      }
+    }//navbar
+  }//container
+}//main-header

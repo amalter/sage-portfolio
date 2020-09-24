@@ -2,6 +2,30 @@ html {
   scroll-behavior: smooth;
 }
 
+/* global header styles */
+.banner {
+  @include bg-dark-gray;
+
+  padding: 2em;
+  color: $aa-white;
+
+  .brand {
+    margin: 2em 0;
+    color: $aa-white;
+    font-weight: 700;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    font-family: $logo-type;
+
+    &:hover {
+      text-decoration: none;
+      color: $aa-light-gray;
+    }
+
+    @include focus-style;
+  }//brand
+}//banner
+
 .row {
   margin-right: 0;
   margin-left: 0;
